@@ -1,0 +1,105 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: "Lato", sans-serif;
+}
+.main_box{
+  background-image: url("photo.jpg");
+  height:100vh;
+  background-size: cover;
+}
+.btn_one{
+  color:white;
+  font-size:30px;
+  font-weight:700;
+  position:absolute;
+  left:16px;
+ line-height: 60px;
+
+}
+.sidebar_menu{
+  position:fixed;
+  left:-500px;
+ height:100vh;
+ width:350px;
+ background-color: rgba(255, 255, 255, 0.1);
+box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5); 
+}
+.sidebar_menu .logo{
+position:absolute;
+width:100%;
+ line-height: 60px;
+ box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5); 
+}
+.sidebar_menu .logo a{
+  position:absolute;
+  left:50px;
+  color:white;
+  text-decoration:none;
+  font-size: 30px;
+  font-weight:500;
+}
+.menu{
+color:white;
+position:absolute;
+top:100px;
+}
+.sidebar_menu .btn_two{
+    color:grey;
+  font-size:30px;
+  font-weight:700;
+  position:absolute;
+  left:300px;
+ line-height: 60px;
+
+}
+.menu li{
+  margin-top:5px; 
+  padding:15px 10px;
+  /*dabbe dabbe ki bhich ki  jgay ko margin bolte hai */
+
+}
+.menu li a{
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+  padding-left:10px;
+
+}
+.menu li i{
+  color:white;
+    font-size:20px;
+
+}
+.social_media{
+position:absolute;
+top:750px;
+width:100%;
+font-size: 25px;
+padding-left: 23px;
+
+}
+.social_media ul a{
+  color:white;
+  
+  margin:5px;
+}
+.social_media ul i{
+  opacity:0.1;
+}
+#check{
+  display:none;
+}
+.sidebar_menu .menu li:hover{
+box-shadow:0px 0px 5px white ; 
+width:100%
+}
+.btn_one i:hover{
+  font-size:50px;
+}
+.social_media ul i:hover{
+  opacity:1;
+}
+#check:checked ~ .sidebar_menu{
+  left:0px;
+}
